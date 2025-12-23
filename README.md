@@ -12,3 +12,11 @@ Project 2: Built a financial research ReAct-style agent with custom tools (stock
 - Applied DeepEval metrics, including TaskCompletionMetric and ToolCorrectnessMetric to score agent behavior
 - Added notebook workflow demonstrating end-to-end agent evaluation: build → test-case capture → metric scoring → analysis
 
+Project 3: Implemented a modular multi-agent travel planner in LangGraph for automated, personalized trip planning:
+- Built Destination Recommender using the Reflection pattern (Destination-Suggester ↔ Destination-Reviewer loop)
+- Built Itinerary Planner using the Supervisor pattern, orchestrating Hotel, Local Guide, Trip Planning, and Language Assistance agents
+- Added specialized tool functions for weather suitability, ticket availability, language compatibility, and local event risk checks (TavilySearch-backed)
+- Enforced destination constraints (avoid previously rejected destinations, single-destination recommendation per iteration)
+- Integrated agent evaluation using DeepEval metrics:
+  - TaskCompletionMetric for preference alignment of destination recommendation
+  - ToolCorrectnessMetric to verify correct tool usage across the workflow
