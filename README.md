@@ -20,3 +20,10 @@ Project 3: Implemented a modular multi-agent travel planner in LangGraph for aut
 - Integrated agent evaluation using DeepEval metrics:
   - TaskCompletionMetric for preference alignment of destination recommendation
   - ToolCorrectnessMetric to verify correct tool usage across the workflow
+ 
+Project 4: Developed and implemented an end-to-end competitive analysis AI workflow:
+- Added ReAct-based agents: question generator, data retrieval/storage, report drafter
+- Implemented CompetitiveAnalysisState dataclass with is_valid_company as a boolean
+- Integrated Chroma vectorstore for persistent embedding-based retrieval
+- Implemented run_question_generator, run_data_retrieval_storage, run_report_drafter workflow nodes
+- Final pipeline now: validate company -> generate questions -> fetch search data -> store to vector DB -> draft competitive analysis report
